@@ -12,7 +12,7 @@ import com.sg.vendingmachine.dao.InventoryPersistenceException;
  *
  * @author manpreet
  */
-public class InventoryAuditStubImpl extends InventoryAudit {
+public class InventoryAuditStubImpl implements InventoryAudit {
 
     public InventoryAuditStubImpl() {
     }

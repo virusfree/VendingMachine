@@ -12,10 +12,9 @@ import java.util.List;
  *
  * @author manpreet
  */
-public class Inventory {
+public interface Inventory {
     List<Product> getAllProducts () throws InventoryPersistenceException;
     Product addProduct(Product product) throws InventoryPersistenceException;
     Product getProduct(String position) throws InventoryPersistenceException;
-    Product setProductQuantity(String position, long quantity) throws InventoryPersistenceException;
-    
+    Product setProductQuantity(String position, long quantity) throws InventoryPersistenceException;  
 }

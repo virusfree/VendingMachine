@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
  *
  * @author manpreet
  */
-public class InventoryFileImpl extends Inventory {
+public class InventoryFileImpl implements Inventory {
     
  public final String INVENTORY_FILE;
     public static final String DELIMITER = "::";
@@ -35,14 +35,6 @@ public class InventoryFileImpl extends Inventory {
 
     public InventoryFileImpl(String fileName) {
         this.INVENTORY_FILE = fileName;
-    }
-
-    InventoryFileImpl(String testInventory) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    InventoryFileImpl(String testInventory) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

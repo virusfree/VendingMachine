@@ -30,11 +30,6 @@ public class VendingMachineServiceLayerImpl implements VendingMachineServiceLaye
         this.audit = audit;
         this.balance = new BigDecimal("0.00").setScale(2, RoundingMode.HALF_UP);
     }
-
-    public VendingMachineServiceLayerImpl(Inventory dao, InventoryAuditFileImpl audit) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     @Override
     public void processPurchase(String position) throws InventoryPersistenceException, NoItemInventoryException, InsufficientFundsException {
 

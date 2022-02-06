@@ -9,6 +9,6 @@ package com.sg.vendingmachine.dao;
  *
  * @author manpreet
  */
-public class InventoryAudit {
+public interface InventoryAudit {
      void writeAuditEntry(String entry)throws InventoryPersistenceException;
 }

@@ -17,7 +17,7 @@ import java.util.List;
  *
  * @author manpreet
  */
-public class InventoryStubImpl extends Inventory {
+public class InventoryStubImpl implements Inventory {
     
     public Product onlyProduct;
 
@@ -28,14 +28,14 @@ public class InventoryStubImpl extends Inventory {
         this.onlyProduct = product;
     }
 
-  //  @Override
+    @Override
     public List<Product> getAllProducts() throws InventoryPersistenceException {
         List<Product> products = new ArrayList<>();
         products.add(onlyProduct);
         return products;
     }
 
-    //@Override
+    @Override
     public Product addProduct(Product product) throws InventoryPersistenceException {
         if (this.onlyProduct.equals(product)) {
             return this.onlyProduct;
@@ -44,7 +44,7 @@ public class InventoryStubImpl extends Inventory {
         }
     }
 
-   // @Override
+   @Override
     public Product getProduct(String position) throws InventoryPersistenceException {
         if (this.onlyProduct.getPosition().equals(position)) {
             return this.onlyProduct;
@@ -53,7 +53,7 @@ public class InventoryStubImpl extends Inventory {
         }
     }
 
-   // @Override
+    @Override
     public Product setProductQuantity(String position, long quantity) throws InventoryPersistenceException {
         if (this.onlyProduct.getPosition().equals(position)) {
             this.onlyProduct.setQuantity(quantity);

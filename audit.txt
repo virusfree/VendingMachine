@@ -1,0 +1,5 @@
+2022-02-05T17:29:25.518652400: Added $2.00 to balance. Balance = $2.00
+2022-02-05T17:29:48.040111: Sold Ferrero Rocher Hazelnut from D3 for $1.75 to user. Balance = $0.25
+2022-02-05T17:29:48.043613500: Returned $0.25 to user. Balance = $0.00
+2022-02-05T17:33:37.902596600: Added $1.00 to balance. Balance = $1.00
+2022-02-05T17:34:08.480880300: Returned $1.00 to user. Balance = $0.00

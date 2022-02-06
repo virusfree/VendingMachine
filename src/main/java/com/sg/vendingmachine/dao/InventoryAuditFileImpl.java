@@ -20,7 +20,7 @@ public static final String AUDIT_FILE = "audit.txt";
     private LocalDateTime timestamp;
     
     @Override
-    public void writeAuditEntry(String entry) throws InventoryPersistenceException, IOException {
+    public void writeAuditEntry(String entry) throws InventoryPersistenceException{
         try {
             this.auditOutput = new PrintWriter(new FileWriter(AUDIT_FILE, true));
         } catch (IOException e) {
